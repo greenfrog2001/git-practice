@@ -1,17 +1,8 @@
 import java.util.Scanner;
 import java.lang.Math;
 
-public class EquationSolver{
-    public static void main(String args[]){
-
-        Scanner params = new Scanner(System.in);
-        System.out.println("Enter a:");
-        double a = params.nextInt();
-        System.out.println("Enter b:");
-        double b = params.nextInt();
-        System.out.println("Enter c:");
-        double c = params.nextInt();
-
+public class EquationSolver_GF{
+    public static void EquationSolver(double a, double b, double c){
         if (a == 0) {
             System.out.println("This equation has only one root x = ");
         }
@@ -39,6 +30,14 @@ public class EquationSolver{
         }
     }
 
-    public EquationSolver() {
+    public static void main(String args[]){
+        Scanner params = new Scanner(System.in);
+        System.out.println("Enter a:");
+        double a = params.nextInt();
+        System.out.println("Enter b:");
+        double b = params.nextInt();
+        System.out.println("Enter c:");
+        double c = params.nextInt();
+        EquationSolver(a, b, c);
     }
 }
